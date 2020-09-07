@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', serif;
+}
+
+body {
+    min-height: 1000px;
+    position: relative;
+    background-color: #16213e;
+}
+
+nav {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid #e94560;
+    padding-bottom: 1.5rem;
+}
+
+.nav__brand__icon h2 {
+    color: #bfcef8;
+    font-size: 2.3rem;
+}
+
+.nav__brand__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav__brand__icon p {
+    color: #bfcef8;
+    font-size: .75rem
+}
+
+form #input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+form #input::placeholder {
+    color: #600f0f;
+    font-size: .75rem;
+}
+
+form #input:focus {
+    border-radius: 5px;
+    border-color: #e94560;
+}
+
+form i {
+    color: #e94560;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+main.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 40px;
+}
+
+.card {
+    border: 2px solid #e94560;
+    width: 250px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 4px 14px 2px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 6px 4px 14px 2px rgba(0, 0, 0, 0.49);
+    box-shadow: 6px 4px 14px 2px rgba(0, 0, 0, 0.49);
+    background-color: #0f3460;
+    margin: 2rem 1.5rem;
+}
+
+.card:hover {
+    -webkit-box-shadow: 9px 7px 14px 2px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 9px 7px 14px 2px rgba(0, 0, 0, 0.6);
+    box-shadow: 9px 7px 14px 2px rgba(0, 0, 0, 0.6);
+}
+
+.card__image {
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    z-index: 10;
+}
+
+.card__content {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.card__title {
+    font-weight: 500;
+    color: #bfcef8;
+}
+
+.card__rate {
+    padding: 10px;
+    background-color: #16213e;
+    border-radius: 10px;
+    color: #cc4e63;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 30px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+footer p a:hover {
+    color: #bfcef8;
+    text-decoration: underline;
+}
